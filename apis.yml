@@ -1,7 +1,22 @@
 aid: edukart
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/edukart.png
 name: Edukart
-description: Edukart is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: EduKart was an Indian online education startup, backed by 500 Startups (500 Global), that sold
+  certificate, diploma and degree courses from partner universities and training institutes to Indian learners.
+  It was surfaced as a portfolio company of 500-global and added to the API Evangelist network as a stub for
+  enrichment. The company is now defunct — repeated probes of edukart.com find a parked hosting placeholder
+  rather than a live business, and no developer, API, documentation or SDK surface exists to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/edukart/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +26,25 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-domain-status: defunct
+x-domain-status-note: 'Re-probed 2026-07-20, confirming the 2026-07-19 finding. edukart.com
+  resolves (103.20.213.169) but no longer serves the company: TLS verification fails
+  (curl exit 60, certificate does not match edukart.com), and the host returns the
+  cPanel parking placeholder /cgi-sys/defaultwebpage.cgi. No api., developer. or docs.
+  subdomain resolves. /.well-known/security.txt, /openid-configuration, /oauth-authorization-server,
+  /api-catalog, /ai-plugin.json and /llms.txt all return 404. No SPF and no DMARC record;
+  only residual Google Workspace MX records remain. GitHub has no first-party edukart
+  organization (only unrelated individual user accounts). EduKart was an Indian e-learning
+  startup (500 Startups portfolio), now defunct. No live company site, API, docs, or
+  SDK surface to enrich. Skip further enrichment until a verified active domain is found.'
 tags:
 - Company
+- Education
+- E-Learning
+- Online Courses
+- India
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,8 @@ maintainers:
 common:
 - type: Website
   url: https://edukart.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
